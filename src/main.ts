@@ -1,11 +1,11 @@
 import Vue from 'vue';
+import './plugins/vuetify'
 import App from './App.vue';
-import {Tabs, Tab} from 'vue-tabs-component';
-
-Vue.component('tabs', Tabs);
-Vue.component('tab', Tab);
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css';
 
 Vue.config.productionTip = false;
+Vue.use(Vuetify);
 
 new Vue({
   render: (h) => h(App),

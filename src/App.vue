@@ -1,36 +1,36 @@
 <template>
-  <div id="app">
-    <div class="logo">
-      <img alt="Vue logo" src="./assets/cutmypic.png" max-height="20%">
-    </div>
-    <Home/>
-  </div>
+  <v-app>
+    <v-toolbar app>
+      <v-toolbar-title class="headline text-uppercase">
+        <span class="font-weight-light">SEAN ANDERSON</span>
+      </v-toolbar-title>
+      <v-btn
+        flat
+        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        target="_blank"
+      >
+        <span class="mr-2">Qualifications</span>
+      </v-btn>
+    </v-toolbar>
+
+    <v-content>
+      <HelloWorld/>
+    </v-content>
+  </v-app>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+<script>
+import HelloWorld from './components/HelloWorld'
 
-import Home from './components/Home.vue';
-
-@Component({
+export default {
+  name: 'App',
   components: {
-    Home,
+    HelloWorld
   },
-})
-export default class App extends Vue {}
+  data () {
+    return {
+      //
+    }
+  }
+}
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-.logo {
-  border-radius: 50%;
-  max-height: 10%;
-}
-</style>
