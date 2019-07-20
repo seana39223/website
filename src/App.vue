@@ -6,10 +6,8 @@
       </v-toolbar-title>
       <v-btn
         flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
       >
-        <span class="mr-2">Qualifications</span>
+        <router-link to="/foo">Qualifications</router-link>
       </v-btn>
     </v-toolbar>
 
